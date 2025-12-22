@@ -1,0 +1,250 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 100px 170px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0 30px;
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 110px;
+  z-index: -1;
+  width: 90px !important;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.mywork-container img {
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mywork-container img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.mywork-showmore {
+  display: flex;
+  gap: 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 30px 60px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.mywork-showmore:hover {
+  gap: 30px;
+  transition: 0.6s;
+}
+
+.card {
+  min-width: 300px;
+  width: 100%;
+  aspect-ratio: 3/1;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.back {
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  font-size: 14px;
+  text-align: center;
+}
+
+.back p {
+  padding: 20px;
+}
+
+@media (max-width: 1000px) {
+  .mywork {
+    margin: 100px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mywork {
+    gap: 50px;
+    margin: 50px 70px;
+  }
+
+  .mywork-title h1 {
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .mywork-title img {
+    width: 130px;
+    margin-right: -20px;
+  }
+
+  .mywork-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    width: 100%;
+  }
+
+  .mywork-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mywork-showmore {
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 50px auto;
+    cursor: pointer;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .back p {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mywork-title h1 {
+    font-size: 30px;
+  }
+
+  .mywork {
+    margin: 100px 20px;
+  }
+
+  .mywork-showmore {
+    font-size: 15px;
+  }
+
+  .mywork-showmore img {
+    width: 25px;
+  }
+
+  .mywork-showmore {
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+
+  .card {
+    aspect-ratio: 2/1;
+  }
+
+  .back p {
+    padding: 20px;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mywork-container img {
+    border-radius: 20px;
+    width: 90%;
+    height: 80%;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .back {
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    height: 84%;
+  }
+
+  .inner {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}

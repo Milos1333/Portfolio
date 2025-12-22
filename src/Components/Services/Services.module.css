@@ -1,0 +1,157 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 80px 150px;
+}
+
+.services-title {
+  position: relative;
+}
+
+.services-title h1 {
+  padding: 0 30px;
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  z-index: -1;
+  width: 90px !important;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.services-format h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.services-format h2 {
+  font-size: 20px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+  color: #d4d4d4;
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 300px;
+}
+
+.services-readmore {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.services-format:hover {
+  border: 2px solid #ff00ff;
+  background-image: linear-gradient(45deg, #3f0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .services {
+    gap: 70px;
+    margin: 20px 70px;
+  }
+
+  .services-title h1 {
+    padding: 0;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .services-title img {
+    left: 90px;
+  }
+
+  .services-format {
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .services-format h2 {
+    font-size: 15px;
+  }
+
+  .services-format p {
+    font-size: 13px;
+    line-height: 25px;
+    max-width: 300px;
+  }
+
+  .services-readmore img {
+    width: 20px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    margin: 20px 40px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-title h1 {
+    font-size: 28px;
+  }
+
+  .services-format p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .services-format h3 {
+    font-size: 12px;
+  }
+
+  .services-format {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .services-format {
+    min-height: 150px;
+  }
+}
