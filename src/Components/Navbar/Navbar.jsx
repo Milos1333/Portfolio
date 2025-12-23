@@ -25,7 +25,7 @@ const Navbar = () => {
       { id: "home", key: "home" },
       { id: "about", key: "about" },
       { id: "services", key: "services" },
-      { id: "work", key: "portfolio" }, // #work mapiraš na key "portfolio"
+      { id: "work", key: "portfolio" },
       { id: "contact", key: "contact" },
     ];
 
@@ -52,7 +52,6 @@ const Navbar = () => {
     );
 
     elements.forEach((el) => observer.observe(el));
-
     return () => observer.disconnect();
   }, []);
 
@@ -60,7 +59,7 @@ const Navbar = () => {
     <div className={styles["navbar"]}>
       <AnchorLink className={styles["anchor-link"]} offset={50} href="#home">
         <div className={styles["navbar-title"]}>
-          <h1>Milos</h1>
+          <h1>Miloš</h1>
           <img src={theme_pattern} alt="" />
         </div>
       </AnchorLink>
@@ -87,7 +86,7 @@ const Navbar = () => {
             href="#home"
             onClick={closeMenu}
           >
-            <p>Home</p>
+            <p>Početna</p>
           </AnchorLink>
           {menu === "home" && <img src={underline} alt="" />}
         </li>
@@ -99,7 +98,7 @@ const Navbar = () => {
             href="#about"
             onClick={closeMenu}
           >
-            <p>About Me</p>
+            <p>O meni</p>
           </AnchorLink>
           {menu === "about" && <img src={underline} alt="" />}
         </li>
@@ -111,7 +110,7 @@ const Navbar = () => {
             href="#services"
             onClick={closeMenu}
           >
-            <p>Services</p>
+            <p>Usluge</p>
           </AnchorLink>
           {menu === "services" && <img src={underline} alt="" />}
         </li>
@@ -135,14 +134,14 @@ const Navbar = () => {
             href="#contact"
             onClick={closeMenu}
           >
-            <p>Contact</p>
+            <p>Kontakt</p>
           </AnchorLink>
           {menu === "contact" && <img src={underline} alt="" />}
         </li>
       </ul>
 
       <AnchorLink className={styles["anchor-link"]} offset={50} href="#contact">
-        <div className={styles["nav-connect"]}>Connect With Me</div>
+        <div className={styles["nav-connect"]}>Kontaktiraj me</div>
       </AnchorLink>
     </div>
   );

@@ -8,24 +8,24 @@ const Footer = () => {
       <div className={styles["footer-top"]}>
         <div className={styles["footer-top-left"]}>
           <div className={styles["footer-title"]}>
-            <h1>Milos</h1>
+            <h1>Miloš</h1>
             <img src={theme_pattern} alt="" />
           </div>
           <p>
-            I am a frontend developer from Banja Luka, RS/BiH with 1 years of
-            experience in Racunari.doo
+            Ja sam grafički dizajner i freelancer iz Banje Luke, RS/BiH, sa više
+            od 4 godine iskustva u izradi vizuelnih materijala.
           </p>
         </div>
       </div>
       <hr />
       <div className={styles["footer-bottom"]}>
         <p className={styles["footer-bottom-left"]}>
-          © 2025 Milos Klepic. All rights reserved.
+          © 2025 Miloš Klepić. Sva prava zadržana.
         </p>
         <div className={styles["footer-bottom-right"]}>
-          <p>Term of Services</p>
-          <p>Privacy Policy</p>
-          <p>Connect with me</p>
+          <p>Uslovi korišćenja</p>
+          <p>Politika privatnosti</p>
+          <p>Kontaktirajte me</p>
         </div>
       </div>
     </div>

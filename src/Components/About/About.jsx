@@ -7,63 +7,66 @@ const About = () => {
   return (
     <div id="about" className={styles["about"]}>
       <div className={styles["about-title"]}>
-        <h1>About me</h1>
+        <h1>O meni</h1>
         <img src={theme_pattern} alt="" />
       </div>
+
       <div className={styles["about-sections"]}>
         <div className={styles["about-left"]}>
           <img src={profile_image} alt="" />
         </div>
+
         <div className={styles["about-right"]}>
           <div className={styles["about-para"]}>
             <p>
-              Frontend Developer with hands-on experience gained through working
-              on various projects. Throughout my work so far, I have had the
-              opportunity to develop modern, functional, and customized web
-              applications, collaborating with different teams and clients.
+              Grafički dizajner sa praktičnim iskustvom stečenim kroz rad na
+              različitim projektima. Tokom dosadašnjeg rada imao sam priliku da
+              kreiram moderna, funkcionalna i vizuelno privlačna dizajnerska
+              rješenja, sarađujući sa različitim klijentima i timovima.
             </p>
             <p>
-              I am dedicated to creating high-quality user experiences,
-              continuously learning new technologies, and improving my skills.
-              With each project, I strive to bring additional value through
-              careful planning, precise execution, and the enthusiasm I invest
-              in my work.
+              Posvećen sam stvaranju kvalitetnog vizuelnog identiteta, stalnom
+              usavršavanju i praćenju savremenih dizajnerskih trendova. Svakom
+              projektu pristupam sa pažnjom, preciznošću i entuzijazmom, s
+              ciljem da klijentima pružim dodatnu vrijednost.
             </p>
           </div>
+
           <div className={styles["about-skills"]}>
             <div className={styles["about-skill"]}>
-              <p>HTML & CSS</p>
-              <hr style={{ width: "50%" }} />
+              <p>Grafički dizajn</p>
+              <hr style={{ width: "80%" }} />
             </div>
             <div className={styles["about-skill"]}>
-              <p>React JS</p>
+              <p>Branding & identitet</p>
               <hr style={{ width: "70%" }} />
             </div>
             <div className={styles["about-skill"]}>
-              <p>JavaScript</p>
-              <hr style={{ width: "60%" }} />
+              <p>Social media dizajn</p>
+              <hr style={{ width: "75%" }} />
             </div>
             <div className={styles["about-skill"]}>
-              <p>MySql</p>
-              <hr style={{ width: "40%" }} />
+              <p>UI / vizuelni dizajn</p>
+              <hr style={{ width: "60%" }} />
             </div>
           </div>
         </div>
       </div>
+
       <div className={styles["about-achievements"]}>
         <div className={styles["about-achievement"]}>
-          <h1>1+</h1>
-          <p>YEARS OF EXPERIENCE</p>
+          <h1>4+</h1>
+          <p>GODINE ISKUSTVA</p>
         </div>
         <hr />
         <div className={styles["about-achievement"]}>
-          <h1>5+</h1>
-          <p>PROJECTS COMPLETED</p>
+          <h1>100+</h1>
+          <p>ZAVRŠENIH PROJEKATA</p>
         </div>
         <hr />
         <div className={styles["about-achievement"]}>
-          <h1>10+</h1>
-          <p>HAPPY CLIENTS</p>
+          <h1>30+</h1>
+          <p>ZADOVOLJNIH KLIJENATA</p>
         </div>
       </div>
     </div>

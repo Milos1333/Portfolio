@@ -21,7 +21,7 @@
 .about-title img {
   position: absolute;
   bottom: 0;
-  right: 70px;
+  right: 40px;
   z-index: -1;
   width: 90px !important;
 }
@@ -50,7 +50,6 @@
   font-size: 16px;
   font-weight: 500;
   text-indent: 50px;
-  text-align: center;
 }
 
 .about-skills {
@@ -133,6 +132,7 @@
 
   .about-para {
     font-size: 13px;
+    text-align: center;
   }
 
   .about-skill p {

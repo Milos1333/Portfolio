@@ -8,19 +8,20 @@ const Hero = () => {
     <div id="home" className={styles["hero"]}>
       <img src={profile_img} alt="" />
       <h1>
-        <span>I'm Milos Klepic,</span> frontend developer based in Banja Luka.
+        <span>Ja sam Miloš Klepić,</span> grafički dizajner iz Banje Luke.
       </h1>
       <p>
-        I am a frontend developer from Banja Luka, RS/BiH with 1 years of
-        experience in Racunari.doo
+        Freelance grafički dizajner iz Banje Luke, RS/BiH sa preko 4 godine
+        iskustva.
       </p>
+
       <div className={styles["hero-action"]}>
         <AnchorLink
           className={styles["anchor-link"]}
           offset={50}
           href="#contact"
         >
-          <div className={styles["hero-connect"]}>Connect with me</div>
+          <div className={styles["hero-connect"]}>Kontaktiraj me</div>
         </AnchorLink>
         <div className={styles["hero-resume"]}>
           <a
@@ -28,7 +29,7 @@ const Hero = () => {
             download
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            My resume
+            Moj CV
           </a>
         </div>
       </div>

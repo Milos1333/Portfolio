@@ -50,6 +50,10 @@
 }
 
 .hero-connect {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
@@ -58,7 +62,12 @@
   transition: border 0.3s ease;
   border: 1px solid #ffffff;
 }
+
 .hero-resume {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 15px;
@@ -142,5 +151,7 @@
   .hero-resume,
   .hero-connect {
     font-size: 10px;
+    width: 120px;
+    padding: 10 20px;
   }
 }

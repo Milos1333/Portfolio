@@ -15,7 +15,7 @@ const Contact = () => {
     const messageText = formData.get("message")?.trim();
 
     if (!name || !email || !messageText) {
-      message.error("Please fill in all fields before submitting.");
+      message.error("Molimo popunite sva polja pre slanja.");
       return;
     }
 
@@ -34,7 +34,7 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      message.success("Message sent successfully!");
+      message.success("Poruka je uspešno poslata!");
       event.target.reset();
     }
   };
@@ -42,17 +42,19 @@ const Contact = () => {
   return (
     <div id="contact" className={styles["contact"]}>
       <div className={styles["contact-title"]}>
-        <h1>Get in touch</h1>
+        <h1>Kontaktirajte me</h1>
         <img src={theme_pattern} alt="" />
       </div>
+
       <div className={styles["contact-section"]}>
         <div className={styles["contact-left"]}>
-          <h1>Let's talk</h1>
+          <h1>Razgovarajmo</h1>
           <p>
-            I'm currently available to take on new projects, so feel free to
-            send me a message about anything that you want me to work on. You
-            can contact anytime.
+            Trenutno sam dostupan za nove projekte, pa slobodno pošaljite poruku
+            o bilo čemu što želite da kreiram. Možete me kontaktirati u bilo
+            koje vrijeme.
           </p>
+
           <div className={styles["contact-details"]}>
             <div className={styles["contact-detail"]}>
               <img src={mail_icon} alt="" />
@@ -68,20 +70,24 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <form onSubmit={onSubmit} className={styles["contact-right"]}>
-          <label htmlFor="">Your Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
-          <label htmlFor="">Your Email</label>
-          <input type="email" placeholder="Enter your email" name="email" />
-          <label htmlFor="">Write your message here</label>
+          <label htmlFor="">Vaše ime</label>
+          <input type="text" placeholder="Unesite Vaše ime" name="name" />
+
+          <label htmlFor="">Vaš Email</label>
+          <input type="email" placeholder="Unesite Vaš email" name="email" />
+
+          <label htmlFor="">Vaša poruka</label>
           <textarea
-            placeholder="Enter your message"
+            placeholder="Unesite Vašu poruku"
             name="message"
             rows="8"
             style={{ width: "100%" }}
           />
+
           <button className={styles["contact-submit"]} type="submit">
-            Submit now
+            Pošalji sada
           </button>
         </form>
       </div>
