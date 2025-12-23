@@ -131,6 +131,7 @@
     padding: 0;
     font-size: 30px;
     font-weight: 600;
+    padding-top: 10px;
   }
 
   .mywork-title img {
@@ -142,6 +143,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     width: 100%;
+    margin-top: 20px;
   }
 
   .mywork-container img {

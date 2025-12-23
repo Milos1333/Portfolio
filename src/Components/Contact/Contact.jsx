@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Contact.module.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import mail_icon from "../../assets/mail_icon.svg";
@@ -20,7 +19,7 @@ const Contact = () => {
       return;
     }
 
-    formData.append("access_key", "896d4b2a-b428-44a7-89d4-5f17eeab8ca7");
+    formData.append("access_key", "cf9e9a88-b3ab-444d-ac5c-5ff8bd297ebb");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
